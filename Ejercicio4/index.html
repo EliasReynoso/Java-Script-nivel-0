@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let resto=0;
+        let abecedario="";
+
+        do{
+
+            let numero=prompt("Ingrese su DNI");
+
+            if(Number(numero)==numero){
+                if(numero>=0&&numero<=99999999){
+
+                    resto = numero % 23;
+
+                    switch(resto){
+                        case 0:
+                            abecedario="T";
+                            break;
+                        case 1:
+                            abecedario="R";
+                            break;
+                        case 2:
+                            abecedario="W";
+                            break;
+                        case 3:
+                            abecedario="A";
+                            break;
+                        case 4:
+                            abecedario="G";
+                            break;
+                        case 5:
+                            abecedario="M";
+                            break;
+                        case 6:
+                            abecedario="Y";
+                            break;
+                        case 7:
+                            abecedario="F";
+                            break;
+                        case 8:
+                            abecedario="P";
+                            break;
+                        case 9:
+                            abecedario="D";
+                            break;
+                        case 10:
+                            abecedario="X";
+                            break;
+                        case 11:
+                            abecedario="B";
+                            break;
+                        case 12:
+                            abecedario="N";
+                            break;
+                        case 13:
+                            abecedario="J";
+                            break;
+                        case 14:
+                            abecedario="Z";
+                            break;
+                        case 15:
+                            abecedario="S";
+                            break;
+                        case 16:
+                            abecedario="Q";
+                            break;
+                        case 17:
+                            abecedario="V";
+                            break;
+                        case 18:
+                            abecedario="H";
+                            break;
+                        case 19:
+                            abecedario="L";
+                            break;
+                        case 20:
+                            abecedario="C";
+                            break;
+                        case 21:
+                            abecedario="K";
+                            break;
+                        case 22:
+                            abecedario="E";
+                            break;
+                    }
+                }
+                alert("El valor en letra del DNI: "+numero+", es: " +abecedario);
+            }
+
+            else {
+                if(numero!=undefined){
+                    alert(numero+" No es un numero");
+                }
+            }
+
+        } while(confirm("desea seguir?"));
+
+        </script>        
+</body>
+</html>
